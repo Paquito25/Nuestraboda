@@ -1,0 +1,246 @@
+:root {
+  --gold-primary: #9b7e45; 
+  --gold-light: #dfc070;
+  --text-dark: #2c2c2c;
+  --text-muted: #555555;
+  --font-script: 'Great Vibes', cursive;
+  --font-serif-title: 'Playfair Display', serif;
+  --font-serif-text: 'Cormorant Garamond', serif;
+  --font-sans: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--text-dark);
+  background-color: #f9f7f3;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.main-wrapper {
+  background-image: url('../assets/img/fondo_bueno.JPG');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+
+.hero-section {
+  padding: 40px 20px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.img-portada {
+  max-width: 100%;
+  width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.romantic-script {
+  font-family: var(--font-script);
+  font-size: 3rem;
+  color: var(--gold-primary);
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.romantic-phrase {
+  font-family: var(--font-serif-text);
+  font-style: italic;
+  font-size: 1.65rem;
+  color: var(--text-dark);
+  line-height: 1.3;
+  padding: 0 15px;
+  margin-bottom: 10px;
+}
+
+.romantic-sub {
+  font-family: var(--font-script);
+  font-size: 2.2rem;
+  color: var(--gold-primary);
+  margin-bottom: 5px;
+}
+
+/* Forzar eliminación de fondo blanco o cuadrículas falsas */
+.icon-anillos {
+  width: 140px;
+  margin: 10px auto 25px auto;
+  display: block;
+  mix-blend-mode: multiply;
+}
+
+.icon-copas {
+  width: 250px; /* Tamaño aumentado */
+  margin: 0 auto 15px auto;
+  display: block;
+  mix-blend-mode: multiply;
+}
+
+.icon-vestimenta {
+  width: 110px;
+  margin: 0 auto 15px auto;
+  display: block;
+  mix-blend-mode: multiply;
+}
+
+.section {
+  background-color: rgba(255, 255, 255, 0.93);
+  margin: 30px auto;
+  padding: 45px 30px;
+  max-width: 650px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  border: 1px solid rgba(197, 160, 89, 0.2);
+}
+
+.title-gold {
+  font-family: var(--font-serif-title);
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--gold-primary);
+  margin-bottom: 20px;
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.time-box {
+  background-color: #fff;
+  width: 80px;
+  padding: 15px 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  border: 1px solid var(--gold-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.time-box span {
+  font-family: var(--font-serif-title);
+  font-size: 2rem;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.time-box small {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: var(--gold-primary);
+  margin-top: 5px;
+}
+
+.img-iglesia {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.time {
+  font-family: var(--font-serif-title);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 5px;
+}
+
+.location {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 25px;
+}
+
+.dress-text {
+  font-family: var(--font-serif-text);
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #ffffff;
+  color: var(--gold-primary);
+  text-decoration: none;
+  padding: 14px 30px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: 2px solid var(--gold-primary);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(155, 126, 69, 0.15);
+}
+
+.btn-gold:hover {
+  background-color: var(--gold-primary);
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+.btn-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+/* Estilos del reproductor de música */
+.music-player {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1000;
+}
+
+.music-btn {
+  background-color: var(--gold-primary);
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.music-btn:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .romantic-script { font-size: 2.5rem; }
+  .romantic-phrase { font-size: 1.4rem; }
+  .img-portada { border-radius: 0; }
+  .section { margin: 15px; padding: 30px 20px; }
+  .countdown-container { gap: 8px; }
+  .time-box { width: 65px; }
+  .time-box span { font-size: 1.6rem; }
+  .music-player { bottom: 15px; right: 15px; }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boda de Francisco & Dora</title>
+
+  <!-- Tipografías elegantes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <div class="main-wrapper">
+
+    <!-- PORTADA -->
+    <header class="hero-section">
+      <img src="assets/img/portada_buena.JPG" alt="Francisco y Dora" class="img-portada">
+    </header>
+
+    <!-- HISTORIA Y CONTADOR -->
+    <section class="section">
+      <h3 class="romantic-script">Nuestra Historia</h3>
+      <p class="romantic-phrase">
+        "Después de tanto camino juntos, llegó el momento de decir que sí. Queremos celebrarlo contigo."
+      </p>
+      
+      <!-- Anillos con fondo transparente forzado -->
+      <img src="assets/icons/anillos.png" alt="Anillos de compromiso" class="icon-anillos">
+
+      <h2 class="title-gold">Faltan sólo</h2>
+      <div class="countdown-container" id="countdown">
+        <div class="time-box"><span id="days">00</span><small>Días</small></div>
+        <div class="time-box"><span id="hours">00</span><small>Hrs</small></div>
+        <div class="time-box"><span id="minutes">00</span><small>Min</small></div>
+        <div class="time-box"><span id="seconds">00</span><small>Seg</small></div>
+      </div>
+    </section>
+
+    <!-- CEREMONIA RELIGIOSA -->
+    <section class="section event-card">
+      <p class="romantic-sub">Dos corazones, una fe, una promesa</p>
+      <h2 class="title-gold">Ceremonia Religiosa</h2>
+      
+      <img src="assets/icons/iglesia.png.jpeg" alt="Iglesia" class="img-iglesia">
+
+      <p class="time">1:00 PM</p>
+      <p class="location">Parroquia de Nuestra Señora de la Asunción.
+         <p class="subtitle-gold">Zoquizoquipan, Hidalgo</p>
+      </p>
+      
+      <a href="https://maps.google.com/?q=Parroquia+de+Nuestra+Señora+de+la+Asunción+Zoquizoquipan" target="_blank" class="btn-gold">
+        <img src="assets/icons/ubi_logo.jpg" alt="Ubicación" class="btn-icon">
+        Ver ubicación
+      </a>
+    </section>
+
+    <!-- RECEPCIÓN -->
+    <section class="section event-card">
+      <!-- Copas más grandes y sin fondo -->
+      <img src="assets/icons/copas_buenas.png" alt="Brindis" class="icon-copas">
+      
+      <h2 class="title-gold">Recepción</h2>
+      <p class="time">3:00 PM</p>
+      <p class="location">
+        Esperamos contar con su asistencia para degustar los sagrados alimentos y vivir de esta hermosa experiencia junto a nosotros, los esperamos en domicilio conocido.
+        <p class="subtitle-gold">Nonoalco, Hidalgo</p>
+      </p>
+
+      <a href="https://maps.app.goo.gl/HiUgF2vQB4Lfi2th7" target="_blank" class="btn-gold">
+        <img src="assets/icons/ubi_logo.jpg" alt="Ubicación" class="btn-icon">
+        Ver ubicación
+      </a>
+    </section>
+
+    <!-- CÓDIGO DE VESTIMENTA -->
+    <section class="section dress-code">
+      <img src="assets/icons/vestimenta.jpg" alt="Código de Vestimenta" class="icon-vestimenta">
+      <h2 class="title-gold">Código de Vestimenta</h2>
+      <p class="dress-text">"Como te sientas cómodo"</p>
+      <p class="small-text">Lo más importante para nosotros es contar con tu presencia.</p>
+    </section>
+
+    <!-- CONFIRMACIÓN -->
+    <section class="section rsvp">
+      <h2 class="title-gold">Confirmación</h2>
+      <p class="location">Por favor confirma tu asistencia dando clic en el botón:</p>
+      
+      <button id="btnWhatsapp" class="btn-gold">
+        <img src="assets/icons/whats_logo.jpg" alt="WhatsApp" class="btn-icon">
+        Confirmar Asistencia
+      </button>
+    </section>
+
+  </div> 
+
+  <!-- REPRODUCTOR DE MÚSICA -->
+  <div class="music-player">
+    <audio id="bg-music" loop>
+      <source src="assets/music/cancion.mp3" type="audio/mpeg">
+    </audio>
+    <button id="music-btn" class="music-btn">
+      🎵 Reproducir Música
+    </button>
+  </div>
+
+  <script src="Js/script.js"></script>
+</body>
+</html>
