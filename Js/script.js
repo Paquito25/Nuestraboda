@@ -28,16 +28,19 @@ const countdownInterval = setInterval(() => {
 }, 1000);
 
 // ==========================================
-// 3. LÓGICA DEL BOTÓN DE WHATSAPP
+// 3. LÓGICA DEL BOTÓN DE FORMULARIO
 // ==========================================
-document.getElementById("btnWhatsapp").addEventListener("click", () => {
-  // RECUERDA: Cambia los ceros por tu número de teléfono (ejemplo: 527711234567)
-  const phoneNumber = "7711594040"; 
-  const message = "Hola, confirmo mi asistencia para la boda de Francisco y Dora el 10 de octubre (coloca tu nombre y número de invitados).";
-  const encodedMessage = encodeURIComponent(message);
-  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-  window.open(whatsappURL, "_blank");
-});
+const btnFormulario = document.getElementById("btnFormulario");
+
+if (btnFormulario) {
+  btnFormulario.addEventListener("click", () => {
+    // Enlace oficial de tu formulario Tally
+    const formURL = "https://tally.so/r/GxWG4Z";
+    
+    // Abre el formulario en una pestaña nueva
+    window.open(formURL, "_blank");
+  });
+}
 
 // ==========================================
 // 4. LÓGICA DEL REPRODUCTOR DE MÚSICA
