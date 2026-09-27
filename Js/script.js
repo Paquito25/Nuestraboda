@@ -33,7 +33,7 @@ const countdownInterval = setInterval(() => {
 document.getElementById("btnWhatsapp").addEventListener("click", () => {
   // RECUERDA: Cambia los ceros por tu número de teléfono (ejemplo: 527711234567)
   const phoneNumber = "7711594040"; 
-  const message = "Hola, confirmo mi asistencia para la boda de Francisco y Dora el 10 de octubre.";
+  const message = "Hola, confirmo mi asistencia para la boda de Francisco y Dora el 10 de octubre (coloca tu nombre y número de invitados).";
   const encodedMessage = encodeURIComponent(message);
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
   window.open(whatsappURL, "_blank");
